@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=‘viewport’ content=“width: device-width, initial-scale=1”>
+        <link rel="stylesheet" href="style.css">
+        <script src="./index.js"></script>
+        <style>
+            .courses {
+                width: 50%;
+                margin: auto;
+                padding: 100px;
+                color: #1E3F20;
+            }
+
+            .courses h1 {
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            .courses h2 {
+                font-family: sans-serif;
+                font-weight: normal;
+                text-align: center;
+                padding: 80px 5px 5px 5px;
+            }
+
+            .courses img {
+                display: block;
+                padding: 20px;
+                width: 50%;
+                margin: auto;
+            }
+
+            .reserve {
+                display: flex;
+                justify-content: center;
+            }
+
+            .reserve button {
+                border: none;
+                padding: 20px;
+                font-size: 24px;
+                border-radius: 15px;
+                background-color: #A57548;
+            }
+
+            .reserve button:hover {
+                background-color: #FCD7AD;
+                color: #192215;
+            }
+
+            .reserve button a {
+                text-decoration: none;
+                color: #E9F6E3;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:rgb(73,120,86); height: 70px"></div>
+        <nav class="navbar">
+            <div class="brand-title">
+                <a href="index.html">Fun for the whole family!</a>
+            </div>
+            <a href="index.html">
+              <img class="logo" src="l2.jpg"></img>
+           </a>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class = "header">
+                <div class="navbar-links">
+                    <ul id="nav">
+                   <li><a href="#">About Us</a>
+                       <ul>
+                           <li class ="hoverList"><a href="contactUs.html">Contact Us</a></li>
+                           <li class ="hoverList"><a href="faq.html">FAQs</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">Services</a>
+                       <ul>
+                           <li class ="hoverList"><a href="batting.html">Batting Cage</a></li>
+                           <li class ="hoverList"><a href="trampoline.html">Trampolines</a></li>
+                           <li class ="hoverList"><a href="miniGolf.html">Mini Golf</a></li>
+                           <li class ="hoverList"><a href="gokart.html">Go Karting</a></li>
+                       </ul>
+                   </li>
+                   <li class="book" style="font-weight: bold"><a href="booking.html">Book Now</a></li>
+               </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="text-align: center;">
+            <img class="banner" src="miniGolfBanner.jpeg">
+            <h1 class="bannerText">MINI GOLF</h1>
+        </div>
+        <p style="width: 50%; margin: auto; font-size: 26px; color: #1E3F20; font-family: sans-serif; padding-top: 100px;">
+            Our mini golf courses here at adventure park are fun for all ages! We have four 18 hole fun packed courses that are perfect for your family. 
+            Our first course Direction Drive is a quirky address filled course where your whole family can travel the world. Our second course Sports 
+            spectacular is perfect for sports loving members of the family. Our third and fourth courses Windmill Way and Paradise Puts are fun scenic 
+            routes that everyone in your family will love! Clubs, balls, and scoring cards are all provided and so is the fun!
+        </p>
+        <div class="courses">
+            <h1>Courses</h1>
+            <h2>Direction Drive</h2>
+            <img src="course1.jpeg">
+            <div class="reserve">
+                <button class="center"><a href="booking.html">Make a Reservation</a></button>
+            </div>
+            <h2>Sports Spectacular</h2>
+            <img src="course2.jpeg">
+            <div class="reserve">
+                <button class="center"><a href="booking.html">Make a Reservation</a></button>
+            </div>
+            <h2>Windmill Way</h2>
+            <img src="course3.jpeg">
+            <div class="reserve">
+                <button class="center"><a href="booking.html">Make a Reservation</a></button>
+            </div>
+            <h2>Paradise Puts</h2>
+            <img src="course4.jpeg">
+            <div class="reserve">
+                <button class="center"><a href="booking.html">Make a Reservation</a></button>
+            </div>
+        </div>
+        
+       <div id="footer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="batting.html">Batting Cages</a></li>
+                <li><a href="trampoline.html">Trampoline Park</a></li>
+                <li><a href="miniGolf.html">Mini Golf</a></li>
+                <li><a href="gokart.html">Go Karting</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

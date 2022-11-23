@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=‘viewport’ content=“width: device-width, initial-scale=1”>
+         <script src="./index.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .faq {
+                padding: 20px 15px 50px 20px;
+                width: 70%;
+                margin: auto;
+                color: #483C32;
+                font-family: sans-serif;
+            }
+
+            .faq h1 {
+                text-align: center;
+                padding-top: 30px;
+                font-size: 2.5em;
+                font-family: sans-serif;
+                font-weight: lighter;
+            }
+
+            table {
+                padding-vertical: 20px;
+                border-collapse: separate;
+                border-spacing: 20px;
+                background-color: #F2D2BD;
+                border-radius: 20px;
+                box-shadow:
+                1px 1px #373737,
+                2px 2px #373737,
+                3px 3px #373737,
+                4px 4px #373737,
+                5px 5px #373737,
+                6px 6px #373737;
+            }
+
+            td {
+                padding: 0 15px;
+                font-weight: lighter;
+            }
+
+            th {
+                font-size: 30px;
+                padding-bottom: 30px;
+                width: 33%;
+            }
+
+            .question {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .answer {
+                <!-- text-align: justify; -->
+            }
+
+            .contact {
+                padding: 150px;
+                text-align: center;
+                font-family: sans-serif;
+                color:#483C32;
+            }
+
+            .contact a {
+                background-color: #1E3F20;
+                color: #fff;
+                padding: 20px;
+                font-size: 20px;
+                border-radius: 30px;
+                text-decoration: none;
+            }
+
+            .contact a:hover {
+                background-color: #E9F6E3;
+                color: #1E3F20;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:rgb(73,120,86); height: 70px"></div>
+        <nav class="navbar">
+            <div class="brand-title">
+                <a href="index.html">Fun for the whole family!</a>
+            </div>
+             <a href="index.html">
+              <img class="logo" src="l2.jpg"></img>
+          </a>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class = "header">
+                <div class="navbar-links">
+                    <ul id="nav">
+                   <li><a href="#">About Us</a>
+                       <ul>
+                           <li class ="hoverList"><a href="contactUs.html">Contact Us</a></li>
+                           <li class ="hoverList"><a href="faq.html">FAQs</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">Services</a>
+                       <ul>
+                           <li class ="hoverList"><a href="batting.html">Batting Cage</a></li>
+                           <li class ="hoverList"><a href="trampoline.html">Trampolines</a></li>
+                           <li class ="hoverList"><a href="miniGolf.html">Mini Golf</a></li>
+                           <li class ="hoverList"><a href="gokart.html">Go Karting</a></li>
+                       </ul>
+                   </li>
+                   <li class="book" style="font-weight: bold"><a href="booking.html">Book Now</a></li>
+               </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <table>
+                <tr>
+                    <th>Logistics</th>
+                    <th>The Experience</th>
+                    <th>Other</th>
+                    <br>
+                </tr>
+                <tr class="question">
+                    <td style="font-weight: normal">How much do our tickets cost?</td>
+                    <td style="font-weight: normal">What is the best time to come?</td>
+                    <td style="font-weight: normal">Can you bring outside food?</td>
+                </tr>
+                <tr class="answer">
+                    <td style="padding-top = -40px">After scheduling a booking on our "Book Now" page, you will be taken to a secure payment portal that will show the estimated prices for your booking. Alternatively, you can call us to find out more about our rates.</td>
+                    <td>We tend to be busier around lunchtime, so come in the evening or morning
+                        if you prefer the quiet. Weekends are the best for families, while we reccomend weekdays for soloists (special discount available!)
+                    </td>
+                    <td>Yes! We have picnics outside for the whole family to enjoy a meal. However, we ask that you only eat food in designated areas to keep the park clean.</td>
+                </tr>
+                <tr class="question">
+                    <td style="font-weight: normal">Are there lockers available?</td>
+                    <td style="font-weight: normal">Can adults participate?</td>
+                    <td style="font-weight: normal">Is there an age requirement for any of the activities?</td>
+                </tr>
+                <tr class="answer">
+                    <td>Programmable lockers are available free of charge for guests to
+                        store their personal items in. Please come to the main office to reserve one,
+                        or alternatively you can also book in advance.
+                    </td>
+                    <td>Of course! Our activities are made for the whole family, with the exception of the miniature trampoline designed for children under the age of 7.</td>
+                    <td>There is no age requirement for mini golf. You have to be 5 years
+                        old or more for the trampoline park and 11 years old or more for
+                        the rest of the attractions.
+                    </td>
+                </tr>
+                <tr class="question">
+                    <td style="font-weight: normal">May I have a refund?</td>
+                    <td style="font-weight: normal">Who cannot participate in the attractions?</td>
+                    <td style="font-weight: normal">What should I wear?</td>
+                </tr>
+                <tr class="answer">
+                    <td>You will be eligible for a refund up to 24 hours before your scheduled booking. Please call us if you need one. Unfortunately, we do not grant refunds for parties larger than 10 people or birthday parties unless we have a week's notice.</td>
+                    <td> Our trampoline and go karting services are not meant for those who:
+                        <ul>
+                            <li>Have recently had surgery</li>
+                            <li>Have neck or back injuries</li>
+                            <li>Are pregnant</li>
+                        </ul>
+                    </td>
+                    <td>Wear comfortable clothes like sneakers and workout clothes, as some of
+                        our activities are strenuous. For safety, we require close-toed shoes and long hair to be tied back and no dangling jewelery.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact">
+            <h2>Contact us with any more questions you may have!</h2>
+            <br /><br />
+            <a href="contactUs.html">Click here to contact</a>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="batting.html">Batting Cages</a></li>
+                <li><a href="trampoline.html">Trampoline Park</a></li>
+                <li><a href="miniGolf.html">Mini Golf</a></li>
+                <li><a href="gokart.html">Go Karting</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

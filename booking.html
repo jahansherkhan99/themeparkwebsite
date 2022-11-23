@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content=“width: device-width, initial-scale=1”>
+	<link rel="stylesheet" href="style.css">
+    <style>
+	.booking {
+		text-align: center;
+		padding-top: 60px;
+	}
+	#Cocomo {
+		display:block;
+	}
+	.phone {
+		text-align: center;
+		padding-top: 70px;
+	}
+	input:invalid+span:after {
+		content: '✖';
+		padding-left: 5px;
+	}
+
+	input:valid+span:after {
+		content: '✓';
+		padding-left: 5px;
+	}
+	#basicinfo {
+		text-align: center;
+		padding-top: 0px;
+
+	}
+	
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./midtermscript.js"></script>
+<title>booking</title>
+</head>
+
+<body>
+	<div style="background-color:rgb(73,120,86); height: 70px"></div>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html">Fun for the whole family!</a>
+        </div>
+         <a href="index.html">
+              <img class="logo" src="l2.jpg"></img>
+          </a>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class = "header">
+            <div class="navbar-links">
+                <ul id="nav">
+               <li><a href="#">About Us</a>
+                   <ul>
+                       <li class ="hoverList"><a href="contactUs.html">Contact Us</a></li>
+                       <li class ="hoverList"><a href="faq.html">FAQs</a></li>
+                   </ul>
+               </li>
+               <li><a href="#">Services</a>
+                   <ul>
+                       <li class ="hoverList"><a href="batting.html">Batting Cage</a></li>
+                       <li class ="hoverList"><a href="trampoline.html">Trampolines</a></li>
+                       <li class ="hoverList"><a href="miniGolf.html">Mini Golf</a></li>
+                       <li class ="hoverList"><a href="gokart.html">Go Karting</a></li>
+                   </ul>
+               </li>
+               <li class="book" style="font-weight: bold"><a href="booking.html">Book Now</a></li>
+           </ul>
+            </div>
+        </div>
+    </nav>
+<div class = "phone">
+		<text>Group Sales Phone:</text>
+		<a href="tel:347-703-7561">347-703-7561</a>
+		<br>
+		<br>
+		<text>Contact Email:</text>
+		<a href="mailto:jahansherkhan99@gmail.com">jahansherkhan99@gmail.com</a>
+	</div>
+	<div class = "booking">
+	  <form id = "form1" method = "get" onSubmit="check_valid_inputs()" style="display: block">
+			<p id = "makeabooking" style="display: flex; margin-left: 660px;" ><strong>Make a booking</strong></p>
+			<ul id = "basicinfo" name = "basicinfo" style="display: inline-block">
+			  <li>
+				<label for="firstname">First Name: *</label>
+				<input type="text" id="firstname" name="firstname" required> 
+			  </li>
+			  <li>
+				<label for="lastname">Last Name: *</label>
+				<input type="text" id="lastname" name="lastname" required>
+			  </li>
+			  <li>
+				<label for="mail">&nbsp; &nbsp; &nbsp; E-mail: *</label>
+				<input type="email" id="mail" name="user_email" required>
+			  </li>
+			  <li>
+				<label for="number">&nbsp; &nbsp; &nbsp; Phone: *</label>
+				<input type="phone" id="number" name="number" required>
+			  </li>
+	    	</ul>
+			<br>
+		  	<div id = "errormessage" style="color: crimson"></div>
+			<text>What would you like to book? (You can pick multiple) *</text><br>
+			<br>
+		    
+			<input class = "activity" type="checkbox" id="gokarting" name="activity" value="gokarting">
+			<label for="gokarting"> Go-Karting $20</label><br>
+			<input class = "activity"type="checkbox" id="batting12" name="activity" value="batting">
+			<label for="batting"> Batting Cage $15 </label><br>
+			<input class = "activity" type="checkbox" id="trampoline12" name="activity" value="trampoline">
+			<label for="trampoline"> Trampoline Park $10</label><br>
+			<input class = "activity" type="checkbox" id="minigolf" name="activity" value="minigolf">
+			<label for="minigolf"> Mini-Golf $25</label><br>
+			<div id = "failure" style="color: crimson"></div>
+		 	<br>
+			<text>How many people would you like to book for? *</text><br>
+			<select name="People" id="numppl">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5</option>
+			  <option value="6">6</option>	
+			</select>
+			<br>
+			<br>
+			<label for="meeting-time">Choose a time for your appointment: *</label>
+			<div class = "calendar">
+			<input type="datetime-local" id="meeting-time"
+				   name="meeting-time" value="2022-04-01T09:00"
+				   min="2022-04-01T09:00" max="2022-12-31T19:00" required>
+			<span class="validity"></span>
+			</div>
+		  	<div id = "timefailure"></div>
+			<button id="button" type="button" Submit onClick="check_valid_inputs()">
+            Submit
+        	</button>
+
+	  </form>
+		<div id = "Confirmation"></div>
+		
+	</div>
+	<div style="padding: 65px;"></div>
+	<div id="footer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="batting.html">Batting Cages</a></li>
+                <li><a href="trampoline.html">Trampoline Park</a></li>
+                <li><a href="miniGolf.html">Mini Golf</a></li>
+                <li><a href="gokart.html">Go Karting</a></li>
+            </ul>
+        </div>
+</body>
+
+</html>

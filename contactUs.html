@@ -1,0 +1,114 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <meta name=‘viewport’ content=“width: device-width, initial-scale=1”>
+    <link rel="stylesheet" href="style.css">
+     <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript">
+        attractions = ["slideshow1.jpeg","slideshow2.jpeg","slideshow3.jpeg","slideshow4.jpeg","slideshow5.jpeg"];
+        var index = 0;
+
+        function slides() 
+        {
+            $("#contactContainer img").fadeOut(3000, nextSlide);
+        }
+        $(document).ready(function() {
+            slides();
+        })
+        function nextSlide()
+        {
+            index++;
+            index= index== attractions.length? 0: index;
+            $("#contactContainer img").attr("src", attractions[index]);
+            $("#contactContainer img").fadeIn(3000, slides);
+        }
+    </script>
+
+    <style>
+        p {
+            font-size: 24px;
+            font-weight: lighter;
+        }
+        h2 {
+            padding-top: 100px;
+            font-size: 1.5em;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        #contactContainer {
+            width: 50%;
+            padding-left: 120px;
+            font-family: sans-serif;
+        }
+
+        #contactContainer img {
+            width: 40vw;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div style="background-color:rgb(73,120,86); height: 70px"></div>
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html">Fun for the whole family!</a>
+        </div>
+         <a href="index.html">
+              <img class="logo" src="l2.jpg"></img>
+          </a>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class = "header">
+            <div class="navbar-links">
+                <ul id="nav">
+               <li><a href="#">About Us</a>
+                   <ul>
+                       <li class ="hoverList"><a href="contactUs.html">Contact Us</a></li>
+                       <li class ="hoverList"><a href="faq.html">FAQs</a></li>
+                   </ul>
+               </li>
+               <li><a href="#">Services</a>
+                   <ul>
+                       <li class ="hoverList"><a href="batting.html">Batting Cage</a></li>
+                       <li class ="hoverList"><a href="trampoline.html">Trampolines</a></li>
+                       <li class ="hoverList"><a href="miniGolf.html">Mini Golf</a></li>
+                       <li class ="hoverList"><a href="gokart.html">Go Karting</a></li>
+                   </ul>
+               </li>
+               <li class="book" style="font-weight: bold"><a href="booking.html">Book Now</a></li>
+           </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="about">
+        <h2>Our Contact Information</h2>
+        <p>
+          <br /> Email: <a href="mailto: adventurepark@gmail.com">
+            adventurepark@gmail.com</a> <br />
+          <br /> Phone Number: (123)-456-7890 <br />
+          <br /> Adress: 17 Cherry Tree Lane, Medford, Ma 02155 <br />
+        </p>
+        <br /><br />
+        <div id="contactContainer">
+            <img src="slideshow1.jpeg">
+        </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="batting.html">Batting Cages</a></li>
+            <li><a href="trampoline.html">Trampoline Park</a></li>
+            <li><a href="miniGolf.html">Mini Golf</a></li>
+            <li><a href="gokart.html">Go Karting</a></li>
+        </ul>
+    </div>
+  </body>
+</html>
